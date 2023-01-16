@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  trailingSlash: true,
+  env: {
+    TEST: process.env.TEST,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
